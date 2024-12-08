@@ -1,22 +1,16 @@
 {
   "packageRules": [
     {
-      "matchDatasources": ["github-tags"],
-      "matchPackageNames": ["Azure/login"],
-      "allowedVersions": "<=1.6.0"
+        "updateTypes": ["major"],
+        "addLabels": ["major"]
     },
     {
-      "matchDatasources": ["github-tags"],
-      "matchPackageNames": ["helm/chart-releaser-action"],
-      "allowedVersions": "<=1.5.0"
+        "updateTypes": ["minor"],
+        "addLabels": ["minor"]
     },
     {
-      "matchManagers": ["nvm"],
-      "rangeStrategy": "replace"
-    },
-    {
-      "matchDatasources": ["github-runners"],
-      "enabled": false
+        "updateTypes": ["patch"],
+        "addLabels": ["patch"]
     }
   ]
 }
