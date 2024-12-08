@@ -1,11 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
+    "config:recommended",
     ":combinePatchMinorReleases",
-    ":dependencyDashboard",
     ":separateMajorReleases",
-    "config:base",
-    "group:monorepos",
+    ":automergeDisabled",
+    ":maintainLockFilesWeekly",
+    ":semanticCommits",
+    ":semanticCommitScope(deps)",
+    "docker:enableMajor",
+    "docker:pinDigests",
+    "group:linters",
+    "helpers:pinGitHubActionDigests",
+    "preview:dockerCompose",
+    "preview:dockerVersions",
     "github>iwobble/.github:pin-actions"
   ],
   "commitMessagePrefix": "[deps]:",
