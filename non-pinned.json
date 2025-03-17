@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
+    "config:best-practices",
     ":combinePatchMinorReleases",
     ":separateMajorReleases",
     ":automergeDisabled",
@@ -9,7 +9,6 @@
     ":semanticCommits",
     ":semanticCommitScope(deps)",
     "docker:enableMajor",
-    "docker:pinDigests",
     "group:linters",
     "helpers:pinGitHubActionDigests",
     "preview:dockerCompose",
